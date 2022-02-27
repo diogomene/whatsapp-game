@@ -1,0 +1,29 @@
+{
+  "name": "whatsapp-game",
+  "version": "1.0.0",
+  "description": "A game that uses whatsapp as a platform for comunicating and asking the players about decisions and events",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc --project ./",
+    "dev": "tsc --project ./ | node ./build/index.js"
+  },
+  "keywords": [
+    "whatsapp",
+    "game",
+    "multiplayes"
+  ],
+  "author": "Diogo Menezes",
+  "license": "ISC",
+  "dependencies": {
+    "node-cache": "^5.1.2",
+    "qrcode-terminal": "^0.12.0",
+    "whatsapp-web.js": "github:pedroslopez/whatsapp-web.js#multidevice"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.21",
+    "@types/qrcode-terminal": "^0.12.0",
+    "ts-node": "^10.5.0",
+    "typescript": "^4.5.5"
+  }
+}
